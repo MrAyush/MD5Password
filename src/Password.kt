@@ -6,5 +6,8 @@ fun main(arg: Array<String>) {
     str = encrypt.getString()
     println("This-> $str")
     str = encrypt.getEncryptedString()
-    println("This-> $str")
+    println(str)
+    val str1 = encrypt.generateHash(str!!)
+    println(str1)
+    print(encrypt.checkSum(str, str1!!))
 }
